@@ -1,0 +1,5 @@
+```bash
+$ cmake .
+$ make
+$ ./myproject
+```
