@@ -18,6 +18,8 @@ install with `choco` on PowerShell:
 $ choco install xming
 ```
 
+run `XMing` and then..
+
 ```bash
 $ export DISPLAY=:0
 $ ./myproject
