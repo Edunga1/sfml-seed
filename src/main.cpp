@@ -1,6 +1,6 @@
-#include "../config.h"
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "../config.h"
 using namespace std;
 
 int main(int argc, char* argv[]) {
@@ -9,14 +9,14 @@ int main(int argc, char* argv[]) {
 
   cout << "Version " << myproject_VERSION_MAJOR << "." << myproject_VERSION_MINOR << endl;
 
-  sf::Window app(sf::VideoMode(800, 600), "myproject");
+  sf::Window window(sf::VideoMode(800, 600), "myproject");
 
-  while (app.isOpen()) {
+  while (window.isOpen()) {
     sf::Event Event;
-    while (app.pollEvent(Event)) {
+    while (window.pollEvent(Event)) {
       if (Event.type == sf::Event::Closed)
-        app.close();
+        window.close();
     }
-    app.display();
+    window.display();
   }
 }
